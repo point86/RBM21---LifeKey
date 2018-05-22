@@ -166,16 +166,15 @@ namespace Visualizzatore_ingressi_RBM21
             //calling schtasks with appropriate cmd options
             string RBM21CorePath = AppDomain.CurrentDomain.BaseDirectory + "RBM21 core.exe";
             /* Cmd line:
-             * Schtasks /Create /tn RBM21Sync /tr "'C:\Users\paolo\Desktop\RBM21\RBM21 core\bin\Debug\RBM21 Core.exe' hardwaresync"  /sc DAILY  /st 12:00:00 /f
                Schtasks /Create /tn RBM21Sync /tr "'C:\Users\paolo\Desktop\RBM21\RBM21 core\bin\Debug\RBM21 Core.exe' hardwaresync"  /sc DAILY  /st 12:00:00 /RL HIGHEST /f
             */
-            string strArguments = " /Create /tn RBM21SyncDatabase /tr \"" + RBM21CorePath + "\"  /sc DAILY  /st 12:00:00  /RL HIGHEST  /f";
+            string strArguments = " /Create /tn RBM21SyncDatabase /tr \"'" + RBM21CorePath + "\"'  /sc DAILY  /st 12:00:00  /RL HIGHEST  /f";
             Process p = new Process();
             p.StartInfo.FileName = "schtasks";
             p.StartInfo.Arguments = strArguments;    
             p.Start();
             p.WaitForExit();
-            MessageBox.Show(strArguments);
+            
             /* on startup cmd will be:
              *  Schtasks /Create /tn RBM21Sync /tr "'C:\Users\paolo\Desktop\RBM21\RBM21 core\bin\Debug\RBM21 Core.exe' "  /sc ONSTART   /f
              */            

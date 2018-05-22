@@ -90,3 +90,4 @@
 [19/05/2018 00:26:44] DBmanager - AddUser "0700044327Utente 50": Nome: Utente 50, Position(File): 50, Key: 0700044327, Credito Residuo: 22, Usercode (interno): "0700044327Utente 50", Active: True. 1 rows affected (database: C:\Program Files (x86)\Esseci computer\RBM21 Sync\cai.sqlite).
 [19/05/2018 00:26:44] DBmanager - AddUser "07001596F7Utente 51": Nome: Utente 51, Position(File): 51, Key: 07001596F7, Credito Residuo: 22, Usercode (interno): "07001596F7Utente 51", Active: True. 1 rows affected (database: C:\Program Files (x86)\Esseci computer\RBM21 Sync\cai.sqlite).
 [19/05/2018 00:26:44] CoreForm - Performing sync with RBM21 on Port: COM1 SQLite file: C:\Program Files (x86)\Esseci computer\RBM21 Sync\cai.sqlite
+[23/05/2018 00:38:35] DBmanager - CreateDatabase C:\Program Files (x86)\Esseci computer\RBM21 Sync\cai.sqlite .
